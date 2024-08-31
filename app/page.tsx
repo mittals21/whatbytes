@@ -4,6 +4,8 @@ import Sidebar from "./components/Sidebar"
 import SkillTest from "./components/SkillTest"
 import QuickStats from "./components/QuickStats"
 import CompareGraph from "./components/CompareGraph"
+import SyllabusWise from "./components/SyllabusWise"
+import QuestionAnalysis from "./components/QuestionAnalysis"
 
 const Home = () => {
   return (
@@ -12,7 +14,7 @@ const Home = () => {
         <Navbar />
       </div>
 
-      <div className="flex flex-1">
+      <div className="flex">
         <div >
           <Sidebar />
         </div>
@@ -21,6 +23,10 @@ const Home = () => {
           <SkillTest />
           <QuickStats/>
           <CompareGraph/>
+        </div>
+        <div>
+        <SyllabusWise/>
+        <QuestionAnalysis/>
         </div>
       </div>
     </div>

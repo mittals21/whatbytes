@@ -17,7 +17,7 @@ const SkillTest = () => {
             <div className="flex items-center border-r-2 border-gray-800 h-3">
               <p className="pr-1 text-gray-800/80">Duration:</p>
             </div>
-            <p className="text-gray-800/80">Submitted on</p>
+            <p className="text-gray-800/80">Submitted on 5 September 2024</p>
           </div>
         </div>
         <button className="bg-blue-900 text-white text-[13px] py-2 px-6 rounded-md font-bold">Update</button>
