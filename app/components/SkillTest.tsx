@@ -14,10 +14,10 @@ const SkillTest = ({ setPopUP }: { setPopUP: any }) => {
           <p className="font-bold">Hyper Text Markup Language</p>
           <div className="flex items-center gap-2 ">
             <div className="flex items-center border-r-2 border-gray-800 h-3">
-              <p className="pr-1 text-gray-800/80">Questions:</p>
+              <p className="pr-1 text-gray-800/80">Questions: 15</p>
             </div>
             <div className="flex items-center border-r-2 border-gray-800 h-3">
-              <p className="pr-1 text-gray-800/80">Duration:</p>
+              <p className="pr-1 text-gray-800/80">Duration: 15 mins</p>
             </div>
             <p className="text-gray-800/80">Submitted on 5 September 2024</p>
           </div>
