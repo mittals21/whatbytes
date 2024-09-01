@@ -5,10 +5,6 @@ import UpdateData from "./UpdateData"
 
 const SkillTest = ({ setPopUP }: { setPopUP: any }) => {
   const [showUpdateData, setShowUpdateData] = useState(false)
-
-  const handleOpenUpdateData = () => setShowUpdateData(true)
-  const handleCloseUpdateData = () => setShowUpdateData(false)
-
   return (
     <div className="flex flex-col gap-8 justify-center">
       <p>Skill Test</p>

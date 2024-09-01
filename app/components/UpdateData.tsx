@@ -10,9 +10,9 @@ const UpdateData = ({
   setData,
 }: {
   popUP: boolean
-  setPopUP: (arg0:boolean)=>void
+  setPopUP: (arg0: boolean) => void
   data: Data
-  setData: (arg0: Data)=>void
+  setData: (arg0: Data) => void
 }) => {
   const [localData, setLocalData] = useState<Data>(data)
   const [errors, setErrors] = useState({
@@ -26,6 +26,27 @@ const UpdateData = ({
     setLocalData((prevData) => ({
       ...prevData,
       [name]: value,
+    }))
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      rank:
+        name === "rank"
+          ? !value || Number(value) <= 0
+            ? "This field is required"
+            : ""
+          : prevErrors.rank,
+      percentile:
+        name === "percentile"
+          ? !value || Number(value) <= 0
+            ? "This field is required"
+            : ""
+          : prevErrors.percentile,
+      score:
+        name === "score"
+          ? !value || Number(value) <= 0
+            ? "This field is required"
+            : ""
+          : prevErrors.score,
     }))
   }
 
@@ -160,7 +181,11 @@ const UpdateData = ({
           </div>
           <div className="flex items-center justify-end gap-5 mt-3">
             <button
-              onClick={() => setPopUP(false)}
+              onClick={() => {
+                setLocalData(data)
+                setErrors({ rank: "", percentile: "", score: "" })
+                setPopUP(false)
+              }}
               className="px-3 py-2.5 font-bold text-blue-900 border-2 border-blue-900 rounded-lg"
             >
               cancel
