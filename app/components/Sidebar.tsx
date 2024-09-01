@@ -5,7 +5,7 @@ import { SlBadge } from "react-icons/sl"
 import { GoFile } from "react-icons/go"
 
 const Sidebar = () => {
-  const [active, setActive] = useState<string>("Dashboard")
+  const [active, setActive] = useState<string>("skilltest")
   return (
     <div className="flex flex-col justify-center w-[230px] py-12 border-r-blue-600 gap-5">
       <div

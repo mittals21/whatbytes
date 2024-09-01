@@ -1,8 +1,14 @@
 "use client"
-import React from "react"
+import React, { useState } from "react"
 import { TiHtml5 } from "react-icons/ti"
+import UpdateData from "./UpdateData"
 
-const SkillTest = () => {
+const SkillTest = ({ setPopUP }: { setPopUP: any }) => {
+  const [showUpdateData, setShowUpdateData] = useState(false)
+
+  const handleOpenUpdateData = () => setShowUpdateData(true)
+  const handleCloseUpdateData = () => setShowUpdateData(false)
+
   return (
     <div className="flex flex-col gap-8 justify-center">
       <p>Skill Test</p>
@@ -20,7 +26,12 @@ const SkillTest = () => {
             <p className="text-gray-800/80">Submitted on 5 September 2024</p>
           </div>
         </div>
-        <button className="bg-blue-900 text-white text-[13px] py-2 px-6 rounded-md font-bold">Update</button>
+        <button
+          onClick={() => setPopUP(true)}
+          className="bg-blue-900 text-white text-[13px] py-2 px-6 rounded-md font-bold"
+        >
+          Update
+        </button>
       </div>
     </div>
   )
