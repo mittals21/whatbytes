@@ -96,7 +96,7 @@ const UpdateData = ({
     <div
       className={`${
         popUP ? "flex" : "hidden"
-      } fixed top-0 left-0 bottom-0 right-0 z-[5056] justify-center items-center `}
+      } fixed top-0 left-0 bottom-0 right-0 z-[5056] justify-center items-center  `}
     >
       <div
         className="bg-black/35 absolute h-screen w-screen"
@@ -104,7 +104,7 @@ const UpdateData = ({
           setPopUP(false)
         }}
       />
-      <div className="rounded-lg  relative flex justify-center items-center z-[3333] bg-white p-6">
+      <div className="rounded-lg scale-90 relative flex justify-center items-center z-[3333] bg-white p-6">
         <div>
           <div className="flex items-center justify-between pb-6">
             <p className="font-extrabold text-2xl">Update Scores</p>
@@ -125,7 +125,7 @@ const UpdateData = ({
                     name="rank"
                     value={localData?.rank}
                     onChange={handleChange}
-                    className="rounded-lg border-2 border-blue-900 w-[150px] h-10 outline-none"
+                    className="rounded-lg border-2 border-blue-900 xl:w-[150px] w-[60px] pl-1 h-10 outline-none"
                   />
                   {errors?.rank && (
                     <p className="text-red-500 text-sm">{errors?.rank}</p>
@@ -147,7 +147,7 @@ const UpdateData = ({
                     name="percentile"
                     value={localData?.percentile}
                     onChange={handleChange}
-                    className="rounded-lg border-2 border-blue-900 w-[150px] h-10 outline-none"
+                    className="rounded-lg border-2 border-blue-900 xl:w-[150px] w-[60px] pl-1 h-10 outline-none"
                   />
                   {errors?.percentile && (
                     <p className="text-red-500 text-sm">{errors?.percentile}</p>
@@ -170,7 +170,7 @@ const UpdateData = ({
                     name="score"
                     value={localData?.score}
                     onChange={handleChange}
-                    className="rounded-lg border-2 border-blue-900 w-[150px] h-10 outline-none"
+                    className="rounded-lg border-2 border-blue-900 xl:w-[150px] w-[60px] pl-1 h-10 outline-none"
                   />
                   {errors?.score && (
                     <p className="text-red-500 text-xs">{errors?.score}</p>
@@ -179,7 +179,7 @@ const UpdateData = ({
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-end gap-5 mt-3">
+          <div className="flex items-center justify-end gap-5 mt-7">
             <button
               onClick={() => {
                 setLocalData(data)

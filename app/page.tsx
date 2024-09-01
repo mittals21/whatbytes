@@ -12,7 +12,7 @@ import { Data } from "@/type"
 
 const Home = () => {
   const [popUP, setPopUP] = useState(false)
-  const [data, setData] = useState<Data>({rank:1, percentile:50, score:10})
+  const [data, setData] = useState<Data>({ rank: 1, percentile: 50, score: 10 })
 
   const handleDataChange = (newData: Data) => {
     setData(newData)
@@ -26,22 +26,18 @@ const Home = () => {
         data={data}
         setData={handleDataChange}
       />
-      <div>
-        <Navbar />
-      </div>
-      <div className="flex justify-between pr-3">
-        <div>
-          <Sidebar />
-        </div>
+      <Navbar />
+      <div className="flex flex-col xl:flex-row xl:items-start justify-between xl:pr-5">
+        <Sidebar />
 
-        <div className="py-8 flex-1 px-10">
+        <div className="xl:py-8 py-4 flex-1 xl:px-10 px-4">
           <SkillTest setPopUP={setPopUP} />
           <QuickStats data={data} />
-          <CompareGraph percentile={data?.percentile}/>
+          <CompareGraph percentile={data?.percentile} />
         </div>
-        <div className="py-[84px] flex flex-col gap-5 max-w-[30vw]">
+        <div className="xl:py-[84px] flex flex-col gap-5 xl:max-w-[30vw]">
           <SyllabusWise />
-          <QuestionAnalysis score={data?.score}/>
+          <QuestionAnalysis score={data?.score} />
         </div>
       </div>
     </div>
