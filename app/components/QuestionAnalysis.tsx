@@ -8,7 +8,7 @@ const QuestionAnalysis = ({ score }: { score: number }) => {
   const progress = (score / 15) * 100
 
   return (
-    <div className="xl:py-10 py-5 px-6 xl:border-2 rounded-lg">
+    <div className="lg:py-10 py-5 px-6 lg:border-2 rounded-lg">
       <div className="flex justify-between">
         <p className="font-bold text-lg">Question Analysis</p>
         <p className="text-blue-700 font-bold">{score}/15</p>

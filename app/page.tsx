@@ -27,15 +27,15 @@ const Home = () => {
         setData={handleDataChange}
       />
       <Navbar />
-      <div className="flex flex-col xl:flex-row xl:items-start justify-between xl:pr-5">
+      <div className="flex flex-col lg:flex-row lg:items-start justify-between lg:pr-5">
         <Sidebar />
 
-        <div className="xl:py-8 py-4 flex-1 xl:px-10 px-4">
+        <div className="lg:py-8 py-4 flex-1 lg:px-10 px-4">
           <SkillTest setPopUP={setPopUP} />
           <QuickStats data={data} />
           <CompareGraph percentile={data?.percentile} />
         </div>
-        <div className="xl:py-[84px] flex flex-col gap-5 xl:max-w-[30vw]">
+        <div className="lg:py-[84px] flex flex-col gap-5 lg:max-w-[30vw]">
           <SyllabusWise />
           <QuestionAnalysis score={data?.score} />
         </div>

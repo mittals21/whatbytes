@@ -59,7 +59,7 @@ const SyllabusWise = () => {
   )
 
   return (
-    <div className="xl:border-2 rounded-lg py-10 px-6">
+    <div className="lg:border-2 rounded-lg py-10 px-6">
       <p className="font-bold text-lg pr-32">Syllabus Wise Analysis</p>
 
       <div className="py-5 ">

@@ -125,7 +125,7 @@ const UpdateData = ({
                     name="rank"
                     value={localData?.rank}
                     onChange={handleChange}
-                    className="rounded-lg border-2 border-blue-900 xl:w-[150px] w-[60px] pl-1 h-10 outline-none"
+                    className="rounded-lg border-2 border-blue-900 lg:w-[150px] w-[60px] pl-1 h-10 outline-none"
                   />
                   {errors?.rank && (
                     <p className="text-red-500 text-sm">{errors?.rank}</p>
@@ -147,7 +147,7 @@ const UpdateData = ({
                     name="percentile"
                     value={localData?.percentile}
                     onChange={handleChange}
-                    className="rounded-lg border-2 border-blue-900 xl:w-[150px] w-[60px] pl-1 h-10 outline-none"
+                    className="rounded-lg border-2 border-blue-900 lg:w-[150px] w-[60px] pl-1 h-10 outline-none"
                   />
                   {errors?.percentile && (
                     <p className="text-red-500 text-sm">{errors?.percentile}</p>
@@ -170,7 +170,7 @@ const UpdateData = ({
                     name="score"
                     value={localData?.score}
                     onChange={handleChange}
-                    className="rounded-lg border-2 border-blue-900 xl:w-[150px] w-[60px] pl-1 h-10 outline-none"
+                    className="rounded-lg border-2 border-blue-900 lg:w-[150px] w-[60px] pl-1 h-10 outline-none"
                   />
                   {errors?.score && (
                     <p className="text-red-500 text-xs">{errors?.score}</p>

@@ -15,12 +15,12 @@ const CompareGraph = ({ percentile }: { percentile: number }) => {
   });
 
   return (
-    <div className="xl:py-10 pt-10 px-6 border-b-2">
+    <div className="lg:py-10 pt-10 px-6 border-b-2">
       <p className="font-bold text-lg">Comparison Graph</p>
       <div>
         <div>
           <div className="flex justify-between items-center">
-            <p className="text-gray-800/80 pt-5 xl:py-5 max-w-[500px]">
+            <p className="text-gray-800/80 pt-5 lg:py-5 max-w-[500px]">
               You scored {percentile}% percentile which is lower than the
               average percentile 72% of all the engineers who took this
               assessment

@@ -7,7 +7,7 @@ import { GoFile } from "react-icons/go"
 const Sidebar = () => {
   const [active, setActive] = useState<string>("skilltest")
   return (
-    <div className=" hidden xl:flex flex-col justify-center w-[230px] py-12 border-r-blue-600 gap-5">
+    <div className=" hidden lg:flex flex-col justify-center w-[230px] py-12 border-r-blue-600 gap-5">
       <div
         className={`flex items-center gap-3 p-5 cursor-pointer ${
           active === "dashboard"
